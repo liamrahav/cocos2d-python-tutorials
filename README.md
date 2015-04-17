@@ -57,7 +57,6 @@ The code is grouped in folders by their difficulty level. Here is how it's mostl
     root directory/
         |
         | readme
-        
         | --> difficulty/
             |
             | --> assets/
