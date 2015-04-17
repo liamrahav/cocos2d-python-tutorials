@@ -36,7 +36,7 @@ On Mac, installation is made easy thanks to Homebrew. If you don't have it insta
 On other operating systems such as Windows or Linux distributions, head to http://www.scipy.org/install.html for more information on how to install for your particular operating system.
 
 ###AVbin
-AVbin is a package provides audio and video support for Cocos2D Python.
+AVbin is a package that provides audio and video support for Cocos2D Python.
 
 Head to https://avbin.github.io/AVbin/Download.html to download the correct installer for your operating system.
 
