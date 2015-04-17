@@ -12,7 +12,6 @@ from time import sleep
 
 
 # Here I make a class that extends cocos' ColorLayer class
-# If you don't know what this is you should probably take a lower level python course first
 class Actions(ColorLayer):
     # When I initialize it I need to pass in an RRGB colour value so it can set the ColorLayer's background
     def __init__(self):
