@@ -41,7 +41,7 @@ class Actions(ColorLayer):
         # You should try removing this to see what happens
         self.sprite.opacity = 0
 
-        # I add the sprite ot the screen (remember it can't be seen yet)
+        # I add the sprite to the screen (remember it can't be seen yet)
         self.add(self.sprite, z=1)
 
         # I then start the fading in (which takes 2 seconds)
