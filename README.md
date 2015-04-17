@@ -50,7 +50,7 @@ Simply head to your terminal and type in `pip install cocos` or `sudo pip instal
 
 ----------------------------------------------------------------------------
 
-From here you should be read to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend in the `basics` folder and working your way up.
+From here you should be read to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend starting in the `basics` folder and working your way up.
 
 It's important to note that `basics` does not mean Python basics! You should at least have a basic grasp on writing object oriented code before trying to jump into Cocos2D Python!
 

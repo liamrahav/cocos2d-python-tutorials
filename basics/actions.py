@@ -12,10 +12,12 @@ from time import sleep
 
 
 # Here I make a class that extends cocos' ColorLayer class
+# This type of layer is different because it has a background color! (awesome right?)
 class Actions(ColorLayer):
     # When I initialize it I need to pass in an RRGB colour value so it can set the ColorLayer's background
+    # I grabbed the Peter River colour (#3498db) from http://flatuicolors.com for this sample
     def __init__(self):
-        super(Actions, self).__init__(52, 52, 73, 94)
+        super(Actions, self).__init__(52, 52, 152, 219)
 
         # I initialize a sprite using the cocos sprite.Sprite class
         # Change the path below to whatever your sprite image is
