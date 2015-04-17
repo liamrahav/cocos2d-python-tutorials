@@ -54,22 +54,16 @@ Simply head to your terminal and type in `pip install cocos` or `sudo pip instal
 
 The code is grouped in folders by their difficulty level. Here is how it's mostly layed out:
 
-`root directory/
-
-    |
-    
-    | readme
-    
-    | --> difficulty/
-    
+    root directory/
         |
-        
-        | --> assets/
-        
         | readme
         
-        | examples
-`
+        | --> difficulty/
+            |
+            | --> assets/
+            | readme
+            | examples
+
 
 From here you should be read to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend starting in the `basics` folder and working your way up.
 
