@@ -50,6 +50,27 @@ Simply head to your terminal and type in `pip install cocos` or `sudo pip instal
 
 ----------------------------------------------------------------------------
 
+### Tutorial Structure
+
+The code is grouped in folders by their difficulty level. Here is how it's mostly layed out:
+
+`root directory/
+
+    |
+    
+    | readme
+    
+    | --> difficulty/
+    
+        |
+        
+        | --> assets/
+        
+        | readme
+        
+        | examples
+`
+
 From here you should be read to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend starting in the `basics` folder and working your way up.
 
 It's important to note that `basics` does not mean Python basics! You should at least have a basic grasp on writing object oriented code before trying to jump into Cocos2D Python!
@@ -57,6 +78,7 @@ It's important to note that `basics` does not mean Python basics! You should at 
 -------------------------------------------------------------
 
 Cocos has also provided some pretty good basic documentation and video samples, but unforunately it stops there. You can check those out here http://python.cocos2d.org/doc/programming_guide/index.html
+
 
 I created this repository because I found the Cocos2D Python documentation to be extremely limited, especially in code samples, beyond the basic level. It is also relatively complex and hard to understand. I often found myself needing to look at the source code for explanations on how to use certain classes and features. 
 If I had tried to teach myself Cocos half a year ago, when I was just getting familiar with basic-intermediate concepts in Python, I would have been hopelessly confused. These guides are aimed towards people in that level.
