@@ -9,3 +9,4 @@ Here is the order which the tutorial follows:
 4.  Keyboard Input (keyboard.py)
 5.  Mouse Input (mouse.py)
 6.  Applying User Input (input.py)
+7.  Audio Playback (audio.py)

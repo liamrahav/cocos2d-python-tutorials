@@ -1,5 +1,5 @@
 
-# I chose these import statements just to make my close look cleaner
+# I chose these import statements just to make my code look cleaner
 # For this to work you would just need to import cocos and then add the subdirectory after
 # Ex: self.sprite = Sprite('directory') would be self.sprite = cocos.sprite.Sprite('directory')
 import cocos

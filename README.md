@@ -36,9 +36,14 @@ On Mac, installation is made easy thanks to Homebrew. If you don't have it insta
 On other operating systems such as Windows or Linux distributions, head to http://www.scipy.org/install.html for more information on how to install for your particular operating system.
 
 ###AVbin
-AVbin is a package that provides audio and video support for Cocos2D Python.
+AVbin is a package that provides some audio and the video support for Cocos2D Python.
 
 Head to https://avbin.github.io/AVbin/Download.html to download the correct installer for your operating system.
+
+###SDL
+SDL is the framework that PyGame (another Python game library) relies on for audio support. Cocos uses it for it's audio as well.
+
+Head over to https://www.libsdl.org/download-1.2.php to download the base SDL library and then to https://www.libsdl.org/projects/SDL_mixer/release-1.2.html to download the Mixer library from SDL (which was what we will be using for audio support in our games)
 
 ----------------------------------------------------------------------------
 Now that you're all set up you should be ready to install Cocos2D
@@ -64,7 +69,7 @@ The code is grouped in folders by their difficulty level. Here is how it's mostl
             | examples
 
 
-From here you should be read to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend starting in the `basics` folder and working your way up.
+From here you should be ready to start reading through the samples and trying out the concepts yourself. I group the the code by difficulty level, so I recommend starting in the `basics` folder and working your way up.
 
 It's important to note that `basics` does not mean Python basics! You should at least have a basic grasp on writing object oriented code before trying to jump into Cocos2D Python!
 

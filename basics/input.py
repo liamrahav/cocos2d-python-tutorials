@@ -51,7 +51,7 @@ class InputExample(Layer):
 
     # Once again we overload a default event handler
     def on_key_press(self, key, modifiers):
-        # First I create a move actions because we programmers are lazy and hate having to retype code!
+        # First I create a move action because we programmers are lazy and hate having to retype code!
         move_left = MoveBy((-50, 0), .5)
 
         # Here's where that Pyglet symbol_string() function comes in handy
@@ -65,7 +65,7 @@ class InputExample(Layer):
             # I only wrote code for moving left, but I can use the Reverse() function instead of rewriting code
             # Reverse() simply tells Cocos to do the reverse action of whatever you pass into it.
             self.sprite.do(Reverse(move_left))
-            
+
 
 # And once again the same init code
 director.init()
