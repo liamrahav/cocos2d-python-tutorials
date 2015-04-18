@@ -14,10 +14,10 @@ from time import sleep
 # Here I make a class that extends cocos' ColorLayer class
 # This type of layer is different because it has a background color! (awesome right?)
 class Actions(ColorLayer):
-    # When I initialize it I need to pass in an RRGB colour value so it can set the ColorLayer's background
+    # When I initialize it I need to pass in an RGBA colour value so it can set the ColorLayer's background
     # I grabbed the Peter River colour (#3498db) from http://flatuicolors.com for this sample
     def __init__(self):
-        super(Actions, self).__init__(52, 52, 152, 219)
+        super(Actions, self).__init__(52, 152, 219, 1000)
 
         # I initialize a sprite using the cocos sprite.Sprite class
         # Change the path below to whatever your sprite image is
@@ -30,8 +30,12 @@ class Actions(ColorLayer):
         # Check those class functions for info on how to code them!
         self.fade_in()
         self.move_left()
-        self.move_right()
-        self.move_right()
+
+        # It's important to note that placing actions one after another can often lead to issues
+        # For example, if you told the sprite to move left one and then move right twice, it would only move right once
+        # This is because python executes the code so quickly that it doesn't have time to complete the first animations
+        # Using the typical time.sleep from the time builtin doesn't work either, because it stops the entire game
+        # Therefore, actions are best suited for user input, not cutscenes or animations
 
     def fade_in(self):
         # First I make a FadeIn animation object
@@ -48,29 +52,13 @@ class Actions(ColorLayer):
         # I don't need to reset the opacity because the FadeIn action does that for me!
         self.sprite.do(fade_action)
 
-    def move_left(self, sleep_time=2):
+    def move_left(self):
         # First I make a MoveBy animation object
         # I set this to move -150 on the X axis, 0 on the Y axis, and to take 2 seconds
         left = MoveBy((-150, 0), 2)
 
         # Finally I make my sprite move left
         self.sprite.do(left)
-
-        # I need to make the program sleep so that it lets this animations finish
-        sleep(sleep_time)
-
-    def move_right(self, sleep_time=2):
-        # If you notice, this method is exactly the same as the move left method, but it moves +150 instead of -150
-
-        # First I make a MoveBy animation object
-        # I set this to move +150 on the X axis, 0 on the Y axis, and to take 2 seconds
-        right = MoveBy((150, 0), 2)
-
-        # And I make my sprite move right (just like in left)
-        self.sprite.do(right)
-
-        # Again I need my program to sleep for the 2 seconds the animation requires
-        sleep(sleep_time)
 
 
 # I initialize the director and run the layer (this is typical for cocos programs)

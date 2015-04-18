@@ -1,7 +1,7 @@
 """
 I chose these import statements just to make my close look cleaner
 For this to work you would just need to import cocos and then add the subdirectory after
-Ex: self.label = Label(...) would be self.sprite = cocos.text.Label(...)
+Ex: self.label = Label(...) would be self.label = cocos.text.Label(...)
 """
 import cocos
 from cocos.text import Label

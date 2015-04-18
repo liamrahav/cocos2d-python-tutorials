@@ -50,26 +50,31 @@ class InputLayer(cocos.layer.ColorLayer):
         # We don't need anything else here, let's just let our sprite be moved in the event handlers
 
     # So now we can overload some default event handlers
+    # We'll let the user move in any direction on the screen with the arrow keys, and jump around with the spacebar
     # We'll only be doing keyboard input for this program
     def on_key_press(self, key, modifiers):
         # If you don't know what these next couple lines do, go check the previous tutorials
         move_left = MoveBy((-50, 0), .5)
         move_up = MoveBy((0, 50), .5)
+        jump = Jump(50, 0, 1, .25)
 
         # Check if they want to go left, and then actually make the sprite go left
         if symbol_string(key) == "LEFT":
             self.sprite.do(move_left)
 
         # Or maybe if they want to move right?
-        if symbol_string(key) == "RIGHT":
+        elif symbol_string(key) == "RIGHT":
             self.sprite.do(Reverse(move_left))
 
         # And lastly we need that jump game to be strong
-        if symbol_string(key) == "UP":
+        elif symbol_string(key) == "UP":
             self.sprite.do(move_up)
 
-        if symbol_string(key) == "DOWN":
+        elif symbol_string(key) == "DOWN":
             self.sprite.do(Reverse(move_up))
+
+        elif symbol_string(key) == "SPACE":
+            self.sprite.do(jump)
 
 
 # And finally we do our usual initialization and run the scene
