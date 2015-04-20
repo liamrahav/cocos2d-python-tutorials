@@ -10,4 +10,6 @@ Here is the order which the tutorial follows:
 5.  Mouse Input (mouse.py)
 6.  Applying User Input (input.py)
 7.  Audio Playback (audio.py)
-8.  Review (review.py)
+8.  Multiple Scene Games (scenes.py)
+9.  Transitioning Between Scenes (transitions.py)
+10.  Review (review.py)
