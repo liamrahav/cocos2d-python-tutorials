@@ -4,8 +4,6 @@ from cocos.scene import Scene
 from cocos.scenes import FadeTransition, SplitColsTransition
 from cocos.text import Label
 
-
-
 # Here is all the same code we had before, but this time we will be adding transitions between the scenes
 # I won't be explaining what I already explained last tutorial
 class Layer1(ColorLayer):

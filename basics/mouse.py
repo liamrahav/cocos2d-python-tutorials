@@ -11,6 +11,7 @@ from cocos.sprite import Sprite
 # I make the layer, set it to an event handler, and initialize the super class to begin
 class MouseInput(Layer):
     is_event_handler = True
+
     def __init__(self):
         super(MouseInput, self).__init__()
 

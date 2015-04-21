@@ -41,7 +41,7 @@ AVbin is a package that provides some audio and the video support for Cocos2D Py
 Head to https://avbin.github.io/AVbin/Download.html to download the correct installer for your operating system.
 
 ###SDL
-SDL is the framework that PyGame (another Python game library) relies on for audio support. Cocos uses it for it's audio as well.
+SDL is the framework that PyGame (another Python game library) relies on for audio support. Cocos uses it for its audio as well.
 
 Head over to https://www.libsdl.org/download-1.2.php to download the base SDL library and then to https://www.libsdl.org/projects/SDL_mixer/release-1.2.html to download the Mixer library from SDL (which was what we will be using for audio support in our games)
 
@@ -73,9 +73,11 @@ From here you should be ready to start reading through the samples and trying ou
 
 It's important to note that `basics` does not mean Python basics! You should at least have a basic grasp on writing object oriented code before trying to jump into Cocos2D Python!
 
+*_I highly recommend that you browse through the code and READMEs on GitHub, and only using the cloned repository to run the games_*
+
 -------------------------------------------------------------
 
-Cocos has also provided some pretty good basic documentation and video samples, but unforunately it stops there. You can check those out here http://python.cocos2d.org/doc/programming_guide/index.html
+Cocos has also provided some pretty good basic documentation and video samples, but unfortunately it stops there. You can check those out here http://python.cocos2d.org/doc/programming_guide/index.html
 
 
 I created this repository because I found the Cocos2D Python documentation to be extremely limited, especially in code samples, beyond the basic level. It is also relatively complex and hard to understand. I often found myself needing to look at the source code for explanations on how to use certain classes and features. 
