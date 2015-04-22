@@ -3,7 +3,7 @@
 
 This repository contains a bunch of useful tutorials for getting started with Cocos2D for Python!
 
-To get started and run the examples, open up your terminal and type `git clone https://github.com/LiamRahav/Cocos-Python-Tutorials.git` in whichever directory you want this repository in.
+To get started and run the examples, open up your terminal and type `git clone https://github.com/LiamRahav/Cocos-Python-Tutorials.git` (assuming you have git installed) in whichever directory you want this repository in. Or you can use the GitHub desktop app, or download this as a ZIP file and then decompress it on your machine. It's up to you.
 
 You will need to install Cocos2D to write these games. From the Cocos2D Python programming guide -
 >cocos2d is a framework for building 2D games, demos, and other graphical/interactive applications.
