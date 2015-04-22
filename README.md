@@ -28,7 +28,7 @@ Pyglet is a python library for writing graphics in python. Cocos2D is built on t
 To install it, run either `pip install pyglet` or `sudo pip install pyglet` depending on whether you are using venv or not.
 
 ###NumPy
-NumPy is a python package that deals with complex mathematics and scientific commputing. You'll need this for particle support.
+NumPy is a python package that deals with complex mathematics and scientific computing. You'll need this for particle support.
 
 On Mac, installation is made easy thanks to Homebrew. If you don't have it installed, run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ` in terminal. Then you can simply run `brew install numpy` and `brew install scipy` to make sure you have the full SciPy package.
