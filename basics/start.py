@@ -20,7 +20,7 @@ class HelloWorld(Layer):
     def __init__(self):
         # First you need to initialize the parent class, Layer, which is why I called the super function in this case
         super(HelloWorld, self).__init__()
-        # First I make a Cocos Label object to display the text.
+        # Then I make a Cocos Label object to display the text.
         hello_world_label = Label(
             "Hello World!",  # The first thing the Label class requires is a piece of text to display
             font_name = "Times New Roman", # The next thing we need to input a font. Feel free to replace it with any font you like.

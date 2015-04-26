@@ -11,7 +11,7 @@
 <!--In here we have things such as the version of the map, what order Tiled should render the map in, the width and height, etc-->
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" nextobjectid="1">
 
-    <!--Here is the declaration of a Tileset. It shows the the GIDs start, its name, and its height and width-->
+    <!--Here is the declaration of a Tileset. It shows the GID's start, its name, and its height and width-->
     <tileset firstgid="1" name="sky" tilewidth="32" tileheight="32">
 
         <!--Inside the Tileset element we have our assets-->

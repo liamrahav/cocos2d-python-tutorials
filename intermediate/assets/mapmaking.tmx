@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="a_grass_tile_by_viperxmns" tilewidth="32" tileheight="32">
+  <image source="img/a_grass_tile_by_viperxmns.jpg" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="sky" tilewidth="32" tileheight="32">
+  <image source="img/sky.gif" width="96" height="96"/>
+ </tileset>
+ <layer name="map0" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztkksKwDAIBU20//b+162FCCLPRcFduxiwYCY+m4mIZmVRpoJ6VTZlL6oP5VSuoroi45/3G3mb0ovyNkAfvM1oZzl4MrKMNsfjkYH50Hf0+owNnJUwI7u7kDPuh51DXI/vR87sbu8S4PYzcnAgT+yz3nhHJ5xBgCvD/gV6Q9l+EH429IaE8A5b4r8BYXsJug==
+  </data>
+ </layer>
+</map>
