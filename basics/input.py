@@ -22,7 +22,7 @@ class InputExample(Layer):
         super(InputExample, self).__init__()
 
         # Let's create a sprite this time instead of using Labels
-        self.sprite = Sprite("assets/img/grossini_dance_08.png")
+        self.sprite = Sprite("assets/img/grossini.png")
         self.sprite.position = 320, 240
 
         # While we're at it let's make it fancy by having our sprite fade in

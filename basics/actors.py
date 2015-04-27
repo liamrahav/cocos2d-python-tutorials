@@ -16,7 +16,7 @@ class Actors(Layer):
         # Instead of text, I create a sprite object
         # Also unlike last time, I added the sprite to the object instead of making it local
         # This is useful if you want to access it in other functions, like I will show in the next tutorial
-        self.actor = Sprite('assets/img/grossini_dance_08.png')
+        self.actor = Sprite('assets/img/grossini.png')
 
         # Then I add it to the layer, similar to the text
         self.actor.position = 320, 240

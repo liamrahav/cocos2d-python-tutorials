@@ -12,7 +12,7 @@ class EffectLayer(ColorLayer):
     def __init__(self):
         super(EffectLayer, self).__init__(231, 76, 60, 1000)
 
-        sprite = Sprite("assets/img/grossini_dance_08.png")
+        sprite = Sprite("assets/img/grossini.png")
         sprite.position = 320, 240
         self.add(sprite)
 

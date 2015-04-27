@@ -20,7 +20,7 @@ class Actions(ColorLayer):
 
         # I initialize a sprite using the cocos sprite.Sprite class
         # Change the path below to whatever your sprite image is
-        self.sprite = Sprite('assets/img/grossini_dance_08.png')
+        self.sprite = Sprite('assets/img/grossini.png')
 
         # I set the sprite's position to the center of the screen
         self.sprite.position = 320, 240

@@ -4,7 +4,6 @@ from cocos.tiles import load
 from cocos.layer import ScrollingManager
 from cocos.director import director
 from cocos.scene import Scene
-from cocos.layer import Layer
 
 
 # This code might seem odd as there are no classes or functions or anything...

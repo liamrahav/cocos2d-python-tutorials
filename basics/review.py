@@ -37,7 +37,7 @@ class InputLayer(cocos.layer.ColorLayer):
         self.is_trippy = is_trippy
 
         # Now we need a little guy to manipulate
-        self.sprite = Sprite('assets/img/grossini_dance_08.png')
+        self.sprite = Sprite('assets/img/grossini.png')
         self.sprite.position = x, y
         self.sprite.opacity = 0
         self.add(self.sprite)
