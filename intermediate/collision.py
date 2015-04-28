@@ -27,9 +27,10 @@ map_layer = load("assets/platformer_map.xml")['map0']
 
 
 # This time we'll make an action that extends both the Action class and the new RectMapCollider
-# The RectMapCollider, you guessed it, lets us collide with rectmaps (A.K.A. tile maps)
+# The RectMapCollider, you guessed it, lets us collide with rectmaps (A.K.A. tilemaps)
 class GameAction(Action, RectMapCollider):
     # To begin, we'll add a function for when the Action starts
+    # I use the start function instead of an __init__ function because of the way the Action parent class is structured
     def start(self):
         # We simply set the velocity of the target sprite to zero
         self.target.velocity = 0, 0
