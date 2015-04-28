@@ -1,5 +1,4 @@
 # Imports as usual
-import cocos
 from cocos.sprite import Sprite
 from cocos.tiles import load
 from cocos.layer import ScrollingManager, ScrollableLayer
@@ -13,11 +12,12 @@ from pyglet.window import key
 
 # The first thing I need to do is initialize the director, because many other objects in this program depend on it
 # This time I'm going to pass in a few more parameters than usual into the initialize function
-director.init(width=800, height=600, autoscale=False, resizable=True)  # I simply set an X and Y for the window, and allow it to be resized
+director.init(width=800, height=600, autoscale=False, resizable=True)
+# I simply set an X and Y for the window, and allow it to be resized
 
 # Here I set a scroller and a key manager
 # The key manager is something new you haven't seen!
-# It allows me to get the keys being pressed globally. Pretty neat!
+# It allows me to get the keys being pressed, globally. Pretty neat!
 keyboard = key.KeyStateHandler()
 
 # And the scrolling manager like you saw last time
@@ -39,7 +39,8 @@ class CarDriver (Driver):
         # Finally, I add it to the rotation of the "target", which would be the sprite we tell to do this action
 
         # Now I'm going to do something very similar for the sprite's acceleration
-        self.target.acceleration = (keyboard[key.UP] - keyboard[key.DOWN]) * 350  # See if you can figure this out yourself!
+        self.target.acceleration = (keyboard[key.UP] - keyboard[key.DOWN]) * 350
+        # See if you can figure this out yourself!
 
         # Next I'm going to make the car stop completely if the space key is held
         if keyboard[key.SPACE]:
@@ -47,10 +48,10 @@ class CarDriver (Driver):
             # Pretty easy, huh?
 
         # That's basically it!
-        # Now we just need to call the original step function to let it do its magic and then update the scroller
+        # Now we just need to call the original step function to let it do its magic
         super(CarDriver, self).step(dt)
 
-        # Lastly, this line simply tells the ScrollingManager to set the center to the sprite
+        # Lastly, this line simply tells the ScrollingManager to set the center of the screen on the sprite
         scroller.set_focus(self.target.x, self.target.y)
 
 

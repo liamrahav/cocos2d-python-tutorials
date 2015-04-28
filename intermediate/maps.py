@@ -1,5 +1,4 @@
 # Imports as usual
-import cocos
 from cocos.tiles import load
 from cocos.layer import ScrollingManager
 from cocos.director import director
