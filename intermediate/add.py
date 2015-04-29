@@ -17,7 +17,7 @@ director.init(width=800, height=600, autoscale=False, resizable=True)
 
 # Here I set a scroller and a key manager
 # The key manager is something new you haven't seen!
-# It allows me to get the keys being pressed, globally. Pretty neat!
+# It allows me to get the keys being pressed, globally (unlike event handling layers). Pretty neat!
 keyboard = key.KeyStateHandler()
 
 # And the scrolling manager like you saw last time
