@@ -34,7 +34,8 @@ class Actions(ColorLayer):
         # For example, if you told the sprite to move left one and then move right twice, it would only move right once
         # This is because python executes the code so quickly that it doesn't have time to complete the first animations
         # Using the typical time.sleep from the time builtin doesn't work either, because it stops the entire game
-        # Therefore, actions are best suited for user input, not cutscenes or animations
+        # However, actions can be added together in the do() function of the sprite using the + operator
+        # This works very well and allows you to string actions like moving left and right together
 
     def fade_in(self):
         # First I make a FadeIn animation object
