@@ -7,6 +7,8 @@ from cocos.layer import Layer
 from cocos.director import director
 from cocos.sprite import Sprite
 
+# This program will display a piece of text with the mouse's coodinates appended to it
+# The user will also have the ability to click somewhere to move the text to that location
 
 # I make the layer, set it to an event handler, and initialize the super class to begin
 class MouseInput(Layer):

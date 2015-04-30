@@ -1,8 +1,7 @@
-"""
-I chose these import statements just to make my close look cleaner
-For this to work you would just need to import cocos and then add the subdirectory after
-Ex: self.label = Label(...) would be self.label = cocos.text.Label(...)
-"""
+# I chose these import statements just to make my close look cleaner
+# For this to work you would just need to import cocos and then add the subdirectory after
+# Ex: self.label = Label(...) would be self.label = cocos.text.Label(...)
+
 import cocos
 from cocos.text import Label
 from cocos import scene
@@ -13,12 +12,12 @@ from cocos.director import director
 # This code is an explained version of the Hello World example from the Cocos2D Python documentation
 # We will be making a simple game that displays the text "Hello World!"
 
-# First I create a class that extends the Layer class from the Cocos library.
+# First we create a class that extends the Layer class from the Cocos library.
 # If you don't know what this is you should probably take an object oriented programming course first
 class HelloWorld(Layer):
     # Each python class needs an __init__ function that is called when an object is instantiated
     def __init__(self):
-        # First you need to initialize the parent class, Layer, which is why I called the super function in this case
+        # First thing we do in the class is to initialize the parent class, Layer, which is why I called the super function in this case
         super(HelloWorld, self).__init__()
         # Then I make a Cocos Label object to display the text.
         hello_world_label = Label(

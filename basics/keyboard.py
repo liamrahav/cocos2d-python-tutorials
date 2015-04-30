@@ -10,6 +10,8 @@ from cocos.sprite import Sprite
 # Except for this import. This import, from Pyglet (one of the dependencies of cocos), is to recognize keyboard codes
 from pyglet.window.key import symbol_string
 
+# In this program, we'll be making a Layer with a bit of text that shows what keys you're holding down
+# It's important to note that there are multiple ways of handling keyboard input, and this is just one of them (I show another in the intermediate course)
 
 # Similar starting code to before with one exception
 class KeyboardInput(Layer):
