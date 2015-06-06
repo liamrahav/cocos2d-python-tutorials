@@ -73,7 +73,7 @@ From here you should be ready to start reading through the samples and trying ou
 
 It's important to note that `basics` does not mean Python basics! You should at least have a basic grasp on writing object oriented code before trying to jump into Cocos2D Python!
 
-*_I highly recommend that you browse through the code and READMEs on GitHub, and only using the cloned repository to run the games_*
+*_I highly recommend that you browse through the code and READMEs on GitHub, and only use the cloned repository to run the games_*
 
 -------------------------------------------------------------
 
