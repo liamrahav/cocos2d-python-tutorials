@@ -72,11 +72,9 @@ class GameAction(Action, RectMapCollider):
         new_rect.y += dy * dt
 
         # Now we need to actually check for collisions
-        # This line is going to seem rather odd as it has two equals signs in it
-        dx, dy = self.target.velocity = self.collide_map(map_layer, last_rect, new_rect, dy, dx)
-        # But what it essentially does is run the collide_map function from RectMapCollider to figure out new dx and dy values
+        self.target.velocity = self.collide_map(map_layer, last_rect, new_rect, dy, dx)
+        # What this line does is run the collide_map function from RectMapCollider to figure out new dx and dy values
         # Then it sets the target's velocity equal to those new dx and dy values
-        # And lastly is sets the local dx and dy values to the new velocity
 
         # Here we check if it is on the ground by looking at the previous bounding rect's y and the current one's y
         # If they're both the same, we know that the target has not moved off the ground!
