@@ -48,14 +48,14 @@ class InputLayer(cocos.layer.ColorLayer):
         # Now I create an audio object and store it within self, based on whether or not it's trippy
         if self.is_trippy:
             # When it is trippy, I have a slowed down and distorted version of the song I made in Audacity
-            self.bg_music = Audio("assets/sound/LatinIndustriesSlow.wav")
+            self.bg_music = Audio("assets/sound/LatinIndustriesSlow.ogg")
             # I also start running a couple effects that make it seem very trippy
             # It's important to note that you can do math on Cocos2D effects and actions
             self.do((Waves(duration=4) * 100) + Liquid(duration=15))
             # In this case I added two actions together and multiplied the waves by 100 for run
         else:
             # If it's not trippy then I just make it the same boring old song we've been using before
-            self.bg_music = Audio("assets/sound/LatinIndustries.wav")
+            self.bg_music = Audio("assets/sound/LatinIndustries.ogg")
 
         # We lower the volume of the background music and have it play the whole time
         self.bg_music.set_volume(.2)

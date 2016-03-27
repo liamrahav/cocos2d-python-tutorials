@@ -42,7 +42,7 @@ class AudioMenu(Menu):
         ]
 
         # Now let's set the song we want them to hear (good god I love me some Latin Industries)
-        self.song = Audio("assets/sound/LatinIndustries.wav")
+        self.song = Audio("assets/sound/LatinIndustries.ogg")
 
         # Then we simply create the menu using the create_menu method and passing in our MenuItem list
         self.create_menu(menu_items)
