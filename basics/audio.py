@@ -24,7 +24,7 @@ class AudioLayer(Layer):
     def __init__(self):
         super(AudioLayer, self).__init__()
         # Now, in the layer we create an Audio object from the class we described above
-        song = Audio("assets/sound/LatinIndustries.wav")
+        song = Audio("assets/sound/LatinIndustries.ogg")
         # And lastly we make the song play when the layer is initialized
         song.play(-1)  # Setting the parameter to -1 makes the song play indefinitely
 
