@@ -1,6 +1,7 @@
 # Import statements as usual
 from cocos.sprite import Sprite
-from cocos.tiles import load, RectMapCollider
+from cocos.tiles import load
+from cocos.mapcolliders import RectMapCollider
 from cocos.layer import ScrollingManager, ScrollableLayer, ColorLayer
 from cocos.director import director
 from cocos.scene import Scene
@@ -37,6 +38,8 @@ class GameAction(Action, RectMapCollider):
 
         # We also tell the game that our sprite is starting on the ground
         self.on_ground = True
+    def on_bump_handler(self, vx, vy):
+        return (vx, vy)
 
     # Now once again we update this "step" function
     def step(self, dt):
